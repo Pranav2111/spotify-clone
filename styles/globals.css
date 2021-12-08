@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&display=swap');
+
+@layer base {
+    body {
+        @apply bg-black scrollbar-hide;
+    }
+}
+
+@layer components {
+    .LeftsidebarIcon {
+        @apply h-6 text-[#808080] cursor-pointer
+        hover:text-white hover:scale-110 transition-all duration-100 ease-out;
+    }
+
+    .Searchtag {
+        @apply py-1.5 px-3 text-[#cecece] rounded-xl
+               text-xs font-bold border-2 border-[#484848] bg-[#282828];
+    }
+
+    .general {
+        @apply bg-[#101010] text-[#CECECE] border border-[#484848]
+                rounded-xl py-2.5 px-3.5 text-[11px] font-bold cursor-default;
+    }
+    
+    .icon {
+        @apply hover:scale-125 transition-all duration-150 ease-out;
+    }
+
+    .croppedIcon {
+        clipPath: inset(0 50% 0 0);
+    }
+}
